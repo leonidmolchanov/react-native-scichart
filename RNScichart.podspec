@@ -23,9 +23,9 @@ Pod::Spec.new do |s|
  # Pods for ImageClassification
 
 
-
   s.preserve_paths = 'LICENSE', 'README.md', 'package.json', 'index.js'
 
   s.dependency 'React-Core'
-   s.vendored_frameworks = 'ios/SciChart.xcframework',
+  s.dependency 'SciChart'
+
 end

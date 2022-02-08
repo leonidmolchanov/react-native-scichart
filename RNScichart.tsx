@@ -7,7 +7,7 @@ import {
     Platform,
     DeviceEventEmitter
 } from "react-native";
-
+import SciCommon from './nativemodule';
 
 interface IProps{
     onData:(data:{
@@ -17,12 +17,11 @@ interface IProps{
 }
 let TF = requireNativeComponent('RNScichart', null);
 
-const RNScichart: React.FunctionComponent<IProps>  = ({onData, style, ref})=>{
+const RNScichart: React.FunctionComponent<IProps>  = ({data, style})=>{
 
     useEffect(()=>{
-        const emitter = Platform.OS === 'ios' ? new NativeEventEmitter(NativeModules.ReactNativeEventEmitter) : DeviceEventEmitter
-        const listener = emitter.addListener("RNScichart", (e)=>onData(JSON.parse(e)))
-    },[])
+        SciCommon.initData(JSON.stringify(data))
+    },[data])
 
     return(
         <TF  style={style}/>

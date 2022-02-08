@@ -37,6 +37,7 @@
 		71D8F3881FB7AA9D0000973C /* rn-swift-bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "rn-swift-bridge.h"; sourceTree = "<group>"; };
 		71D8F3891FB7AA9D0000973C /* tenserFlowCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tenserFlowCamera.swift; sourceTree = "<group>"; };
 		C763124926C42CF300C44033 /* ReactNativeEventEmitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactNativeEventEmitter.swift; sourceTree = "<group>"; };
+		C77DAC4127B09C2F004D7EBC /* SciChart.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SciChart.xcframework; path = Frameworks/SciChart.xcframework; sourceTree = "<group>"; };
 		C7842AAC26C1BF7C00933D63 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +62,7 @@
 				C763124926C42CF300C44033 /* ReactNativeEventEmitter.swift */,
 				2C7BAAF8CC20459CA1779AA1 /* rn-swift-bridge.m */,
 				C7842AA826C1A84300933D63 /* Recovered References */,
+				C77DAC4027B09C2F004D7EBC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +83,14 @@
 				716CFE9F205C74DD00800D68 /* tenserFlowCameraBasicViewManager.swift */,
 			);
 			path = RNScichart;
+			sourceTree = "<group>";
+		};
+		C77DAC4027B09C2F004D7EBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C77DAC4127B09C2F004D7EBC /* SciChart.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		C7842AA826C1A84300933D63 /* Recovered References */ = {
