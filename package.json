@@ -1,6 +1,6 @@
 {
   "name": "react-native-scichart",
-  "version": "0.1.01",
+  "version": "0.1.02",
   "peerDependencies": {
     "react-native-swift": "^1.0.0"
   },
