@@ -8,6 +8,9 @@
 RCT_EXTERN_METHOD(initData:(NSString *)background_color:(NSString *)fill_color:(NSString *)
                   border_color:(NSString *))
 RCT_EXTERN_METHOD(updateData:(NSString *))
+RCT_EXTERN_METHOD(updateChartState:(NSString *)state:(BOOL *))
+RCT_EXTERN_METHOD(isLineStick:(BOOL *))
+RCT_EXTERN_METHOD(isCursorStick:(BOOL *))
 
 @end
 @interface RCT_EXTERN_MODULE(ReactNativeEventEmitter, RCTEventEmitter)

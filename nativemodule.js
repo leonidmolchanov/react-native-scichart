@@ -17,6 +17,16 @@ const SciCommon = {
     return SciChartCommon.updateData(data
     );
   },
+    updateChartState:(params) =>{
+      const {target, state} = params
+      return SciChartCommon.updateChartState(target,state);
+    },
+  isLineStick:(state) =>{
+    return SciChartCommon.isLineStick(state);
+  },
+  isCursorStick:(state) =>{
+    return SciChartCommon.isCursorStick(state);
+  }
 };
 
 export default SciCommon;
